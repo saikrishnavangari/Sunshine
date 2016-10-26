@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_71c43cebdb8529d6adaa7fb3ee077cb87bfe23d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\krrish\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_65b826e9ce72fd3a3ae17affe5bfe251b04919ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\krrish\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.8.0_1b0c33dd2234fe54e94796c953f6fc4d12b2bb82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\krrish\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_1eceeb1418c7ac5d5e7f5d9fa383ce4add9816f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\krrish\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.0_83d524aae856447f87848743fe532e9b42b63085\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ad8f267fd31dfc029deef9cde523248b960594af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\krrish\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_52069b050a50e2b1516f5591816e6ee4dca3d8ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7053553dbb26b428aed4df95ae27b9ab7c22ccda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_4a9c97198053cb67f83e6040e36d9d8a6219e0c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_cee7b1517c8f18a1e542d0f4c07d5bb6e57d37e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_ea54cef92ebe4222648258c1a8a865d8d38768f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_72e6e347a67e4cf74e8726f3c3239f7a927ae3ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ed757b2167a19abd49a8027dff479b85c6d892">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_968f12bdd43720e0124edb47ef6f180e8a59efdd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_fb67f062bc48ddcb66b21a2e6c7684d3272c5ae5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\krrish\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_71bfd378a85e7989e93c8ce48219c72a47908906\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_fbea6ccce62d62a23c35d4163f76956c237ef600\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_0cb514d9f7709c496882a001244a81e4c8f4a3a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_0f9e43958a52c16a2e03ccd71ec47d76c020bf21\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="126268f34d62386c432a7927b76b8f2ff18b69f9">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2611de779b518164b3dae03a8f04610562aa0eac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b70786638df0dcea0583adbce440cf554e195e38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_0482143e128a4d9f6a97a11683a0173c67039e62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="E:\ANdroidtraining_Acad_gild\udacitylearning\Sunshine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_5c3c6edd8d2af849a94f61830fa4992ad73d004a\classes.dex" />
+    </item>
+
+</items>

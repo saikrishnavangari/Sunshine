@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sunshine</string>
+    <string name="hello_world">HelloWorld</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
