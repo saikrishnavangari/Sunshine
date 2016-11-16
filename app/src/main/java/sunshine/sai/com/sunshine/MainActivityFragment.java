@@ -2,9 +2,10 @@ package sunshine.sai.com.sunshine;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,31 +17,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import sunshine.sai.com.sunshine.Interfaces.WeatherApi;
-import sunshine.sai.com.sunshine.model.Data;
-
-import static sunshine.sai.com.sunshine.MainActivity.LOG_TAG;
 
 /**
  * Created by krrish on 17/10/2016.
  */
 
 public class MainActivityFragment extends Fragment {
-    private  View rootview;
-    private ArrayList<String> dataList=new ArrayList<>();
+    private ArrayAdapter<String> mForecastAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,36 +32,69 @@ public class MainActivityFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.forecastfragment, menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+//        return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.action_refresh:
+                Toast.makeText(getActivity(), "refresh button selected", Toast.LENGTH_SHORT).show();
+            default:
+                Toast.makeText(getActivity(), "unknown item", Toast.LENGTH_SHORT).show();
+        }
+        return true;
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-         rootview=inflater.inflate(R.layout.fragment_main,container,false);
+        // The ArrayAdapter will take data from a source and
+        // use it to populate the ListView it's attached to.
+        mForecastAdapter =
+                new ArrayAdapter<String>(
+                        getActivity(), // The current context (this activity)
+                        R.layout.list_item_forecast, // The name of the layout ID.
+                        R.id.list_item_forecast_textview, // The ID of the textview to populate.
+                        new ArrayList<String>());
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(MainActivity.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        WeatherApi weatherApi= retrofit.create(WeatherApi.class);
+        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        Call<Data> call=weatherApi.getWeatherData(ParameterInfo(94043,"json","metric",7,MainActivity.API_KEY));
-        call.enqueue(new Callback<Data>() {
-            @Override
-            public void onResponse(Call<Data> call, Response<Data> response) {
-                Data list=  response.body();
-                //  Log.d(LOG_TAG, list.getList().get(2).getWeather().get(0).getMain());
-                updateview(getArraylistForAdapter(list));
-                Log.d(LOG_TAG,"from fragment activity");
-            }
+        // Get a reference to the ListView, and attach this adapter to it.
+        ListView listView = (ListView) rootView.findViewById(R.id.listView_forecast);
+        listView.setAdapter(mForecastAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
-            public void onFailure(Call<Data> call, Throwable t) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                String forecast = mForecastAdapter.getItem(position);
+                Intent intent = new Intent(getActivity(), DetailActivity.class)
+                        .putExtra(Intent.EXTRA_TEXT, forecast);
+                startActivity(intent);
             }
         });
-        return rootview;
+
+
+        return rootView;
     }
 
-    //parameter info to be supplied in the url
+    private void updateWeather() {
+        FetchWeatherTask weatherTask = new FetchWeatherTask(getActivity(), mForecastAdapter);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String location = prefs.getString(getString(R.string.pref_location_key),
+                getString(R.string.pref_location_default));
+        weatherTask.loadData(location);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        updateWeather();
+    }
+
+   /* //parameter info to be supplied in the url
     Map ParameterInfo(int q, String mode, String units, int cnt, String APPID){
         Map<String , String> queryParameters= new HashMap<>();
         queryParameters.put("q", String.valueOf(q));
@@ -88,22 +105,7 @@ public class MainActivityFragment extends Fragment {
         return queryParameters;
 
     }
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.forecastfragment,menu);
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-//        return super.onOptionsItemSelected(item);
-        switch(item.getItemId()) {
-            case R.id.action_refresh:
-                Toast.makeText(getActivity(), "refresh button selected",Toast.LENGTH_SHORT).show();
-                default:
-                    Toast.makeText(getActivity(), "unknown item",Toast.LENGTH_SHORT).show();
-        }
-        return true;
-    }
 //populate the listview with the data fetched
     public void updateview(ArrayList<String> datalist) {
         if( datalist!=null){
@@ -123,31 +125,7 @@ public class MainActivityFragment extends Fragment {
                 }
             });
         }
-    }
+    }*/
 
-    // turns the weather data into an array list
-    private ArrayList getArraylistForAdapter(Data body) {
-        Data ListObject=body;
-        for(int i=0;i<ListObject.getList().size();i++)
-        {
-            String Tempdata;
-            Data.Temp temp=body.getList().get(i).getTemp();
-            ArrayList<Data.weather> weather=body.getList().get(i).getWeather();
-            Tempdata=getdate()+" "+weather.get(0).getMain()+" "+String.valueOf(temp.getMax())+" "+"/"+String.valueOf(temp.getMin());
-            Log.d(LOG_TAG," data list :"+Tempdata);
-            dataList.add(Tempdata);
-        }
-        return dataList;
-    }
-    //get local time and date
-        private  String  getdate() {
-        Date today;
-        String output;
-        SimpleDateFormat formatter;
-        formatter = new SimpleDateFormat("EEE, MMM d, yy", Locale.getDefault() );
-        today = new Date();
-        output = formatter.format(today);
-        return output;
-    }
 
 }
