@@ -47,7 +47,7 @@ public class FetchWeatherTask {
                          @Override
                          public void onResponse(Call<Data> call, Response<Data> response) {
                              Data list = response.body();
-                             Log.d(LOG_TAG, list.getList().get(2).getWeather().get(0).getMain());
+                             // Log.d(LOG_TAG, list.getList().get(2).getWeather().get(0).getMain());
                              for (String dayForecastStr : getArraylistForAdapter(list))
                                  mForecastAdapter.add(dayForecastStr);
                          }

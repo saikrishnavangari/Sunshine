@@ -42,7 +42,7 @@ public class MainActivityFragment extends Fragment {
 //        return super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                Toast.makeText(getActivity(), "refresh button selected", Toast.LENGTH_SHORT).show();
+                updateWeather();
             default:
                 Toast.makeText(getActivity(), "unknown item", Toast.LENGTH_SHORT).show();
         }
@@ -94,38 +94,7 @@ public class MainActivityFragment extends Fragment {
         updateWeather();
     }
 
-   /* //parameter info to be supplied in the url
-    Map ParameterInfo(int q, String mode, String units, int cnt, String APPID){
-        Map<String , String> queryParameters= new HashMap<>();
-        queryParameters.put("q", String.valueOf(q));
-        queryParameters.put("mode", mode);
-        queryParameters.put("units", units);
-        queryParameters.put("cnt", String.valueOf(cnt));
-        queryParameters.put("APPID", APPID);
-        return queryParameters;
 
-    }
-
-//populate the listview with the data fetched
-    public void updateview(ArrayList<String> datalist) {
-        if( datalist!=null){
-            List<String> weekForecast = datalist;
-            final ArrayAdapter<String> mForecastAdapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item_forecast,
-                    R.id.list_item_forecast_textview, weekForecast);
-            ListView listView = (ListView) rootview.findViewById(R.id.listView_forecast);
-            listView.setAdapter(mForecastAdapter);
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    String item_Clicked=mForecastAdapter.getItem(i);
-                    // start Detail Activity
-                    Intent intent= new Intent(getActivity(), DetailActivity.class);
-                    intent.putExtra(Intent.EXTRA_TEXT,item_Clicked);
-                    startActivity(intent);
-                }
-            });
-        }
-    }*/
 
 
 }
